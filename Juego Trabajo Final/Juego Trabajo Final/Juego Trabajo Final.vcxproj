@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27580CE7-4222-4C6D-B868-3B77175903AA}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>JuegoTrabajoFinal</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrBalas.cpp" />
+    <ClCompile Include="ArrBonus.cpp" />
+    <ClCompile Include="ArrNubes.cpp" />
+    <ClCompile Include="ArrObstaculos.cpp" />
+    <ClCompile Include="Bala.cpp" />
+    <ClCompile Include="BalaInvader.cpp" />
+    <ClCompile Include="BalaPersonaje.cpp" />
+    <ClCompile Include="Biberon.cpp" />
+    <ClCompile Include="Bonus.cpp" />
+    <ClCompile Include="Caramelo1.cpp" />
+    <ClCompile Include="Caramelo2.cpp" />
+    <ClCompile Include="Coin.cpp" />
+    <ClCompile Include="Cuchillo.cpp" />
+    <ClCompile Include="Cuervo.cpp" />
+    <ClCompile Include="Estrella.cpp" />
+    <ClCompile Include="Fondo.cpp" />
+    <ClCompile Include="Hongo.cpp" />
+    <ClCompile Include="Invader.cpp" />
+    <ClCompile Include="Juego.cpp" />
+    <ClCompile Include="LifeUp.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Nubes.cpp" />
+    <ClCompile Include="Obstaculo.cpp" />
+    <ClCompile Include="Paleta.cpp" />
+    <ClCompile Include="Personaje.cpp" />
+    <ClCompile Include="Piedra.cpp" />
+    <ClCompile Include="Rayo.cpp" />
+    <ClCompile Include="Tenedor.cpp" />
+    <ClCompile Include="Tornado.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrBalas.h" />
+    <ClInclude Include="ArrBonus.h" />
+    <ClInclude Include="ArrNubes.h" />
+    <ClInclude Include="ArrObstaculos.h" />
+    <ClInclude Include="Bala.h" />
+    <ClInclude Include="BalaInvader.h" />
+    <ClInclude Include="BalaPersonaje.h" />
+    <ClInclude Include="Biberon.h" />
+    <ClInclude Include="Bonus.h" />
+    <ClInclude Include="Caramelo1.h" />
+    <ClInclude Include="Caramelo2.h" />
+    <ClInclude Include="Coin.h" />
+    <ClInclude Include="Cuchillo.h" />
+    <ClInclude Include="Cuervo.h" />
+    <ClInclude Include="Estrella.h" />
+    <ClInclude Include="Fondo.h" />
+    <ClInclude Include="Hongo.h" />
+    <ClInclude Include="Invader.h" />
+    <ClInclude Include="Juego.h" />
+    <ClInclude Include="LifeUp.h" />
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Nubes.h" />
+    <ClInclude Include="Obstaculo.h" />
+    <ClInclude Include="Paleta.h" />
+    <ClInclude Include="Personaje.h" />
+    <ClInclude Include="Piedra.h" />
+    <ClInclude Include="Rayo.h" />
+    <ClInclude Include="Tenedor.h" />
+    <ClInclude Include="Tornado.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
